@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chai Pot-Rewards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar-brand {
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .nav-link:hover {
+            color: black;
+            font-weight: bolder;
+        }
+
+        .gold {
+            color: #d4af37;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#">The Chai Pot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-4">
+                        <a class="nav-link" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">SHOP</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">FRANCHISE</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="enquiry.html">CONTACT</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#mySearch"><i
+                                class="bi bi-search"></i></a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal"><i
+                                class="bi bi-bag"></i></a>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h1 class="modal-title">ITEMS IN YOUR CART</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body text-center">
+                    <h4 class="mt-5">Your cart is currently empty</h4><br><br>
+                    <a href="bootstrap-project-chaipot.html/shop.html" class="btn btn-dark">SHOP NOW</a>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CHECK OUT</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Search-->
+    <div class="modal" id="mySearch">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body input-group">
+                    <input type="text" class="form-control" id="inputSearch" placeholder="What are you looking for?">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <button type="button" class="btn-close mt-2 ms-3" data-bs-dismiss="modal"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h6 class="text-center fw-light mt-4"><a href="home.html" class="text-dark text-decoration-none">HOME</a> > <a
+            href="#" class="text-dark text-decoration-none">REWARDS</a></h6>
+    <div class="container-fluid mt-4">
+        <img src="/Images/The-Chai-Pot/art-of-chai-edited.jpg" width="100%">
+        <h2 class="text-center mt-3">Unlock access to exclusive benefits.</h2>
+    </div><br><br>
+
+
+    <div class="container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-3 py-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <i class="bi bi-star-fill text-success"></i> &nbsp
+                        Welcome Tier
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        By registering your Chai Pot Card, you become eligible for the benefits of Welcome level of the
+                        Chai Pot Rewards™ program.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-3 pt-5 py-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <i class="bi bi-star-fill text-success"></i> &nbsp
+                        Green Tier
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Earn five stars within 12 months to upgrade to the Green level and say
+                        hello to all the benefits of Green Tier!</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-3 pt-5 py-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <i class="bi bi-star-fill gold"></i> &nbsp
+                        Gold Tier
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Earn 25 stars in 12 months—that's 20 additional stars after initially
+                        qualifying for the Green level to step up to the Gold level, the pinnacle of rewards!</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fs-3 pt-5 py-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        How To Collect Stars
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ol class="list-group list-group-numbered list-group-flush">
+                            <li class="list-group-item pb-3">Create an account to get access to full range of Chai Pot Rewards Benefits</li>
+                            <li class="list-group-item pb-3">Earn a star on every purchase on your registered Chai Pot Card</li>
+                            <li class="list-group-item">As you earn stars, you can redeem them for rewards like free tea, and more.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="text-center">
+            <button type="button" class="btn btn-dark">JOIN NOW</button>
+        </div>
+    </div><br><br><br>
+</body>

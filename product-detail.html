@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chai Pot-product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar-brand {
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .nav-link:hover {
+            color: black;
+            font-weight: bolder;
+        }
+
+        #inputQty {
+            border: 1px solid black;
+        }
+
+        .name {
+            font-size: 46px;
+        }
+
+        .bi-facebook:hover,
+        .bi-instagram:hover,
+        .bi-twitter:hover,
+        .bi-pinterest:hover,
+        .bi-whatsapp:hover,
+        .bi-youtube:hover {
+            font-size: 27px !important;
+            cursor: pointer;
+        }
+        .footer{
+            background-color: darkslategray
+        }
+
+        @media screen and (max-width: 767px) {
+            .image {
+                margin-left: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#">The Chai Pot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-4">
+                        <a class="nav-link" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">SHOP</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="about-us.html">ABOUT US</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">FRANCHISE</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#"><i class="bi bi-bag"></i></a>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <img src="/Images/The-Chai-Pot/artisan-chai-masala_1690958782097.jpg" class="image" height="400px">
+            </div>
+            <div class="col-md-6 mt-4 product-description">
+                <h1 class="name">ARTISAN CHAI MASALA - 20g</h1>
+                <p>ARTISAN CHAI MASALA is a gentle blend of soothing and aromatic spices that helps create a relaxing
+                    cup of Chai. Its rich aroma is complemented by a complex flavour that invigorates the senses and
+                    warms the heart. Add 1g to each cup of Chai.</p>
+                <h2>Rs.100.00</h2><br>
+                <div class="row input-field">
+                    <div class="col-auto">
+                        <label class="col-form-label fw-bold" for="inputQty">Quantity:</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="number" class="form-control w-25" id="inputQty" value="1">
+                    </div>
+                </div><br>
+                <button type="button" class="btn btn-dark">BUY IT NOW</button>
+                <button type="button" class="btn btn-outline-dark">ADD TO CART</button>
+            </div>
+        </div>
+    </div><br><br><br>
+
+    <footer class="footer py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h5>ADDRESS</h5><br>
+                    <p>NOMADIC TASTEBUDS PVT LTD</p>
+                    <p>#7, Konanakunte Road, Bengaluru-560062</p>
+                    <p>Email: hello@thechaipot.com</p>
+                    <p>Phone: 1800-859-2533</p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2">
+                    <h5>QUICK LINKS</h5><br>
+                    <p><a href="#" class="text-white text-decoration-none">Franchise</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">About Us</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Contact</a> </p>
+                    <p><a href="#" class="text-white text-decoration-none">Blogs</a></p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <h5>THE COMPANY</h5><br>
+                    <p><a href="#" class="text-white text-decoration-none">Terms and Conditions</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Shipping and Returns</a></p>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-3">
+                    <h5 class="">Follow Us</h5><br>
+                    <div class="social-media fs-4">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-whatsapp ms-2"></i>
+                        <i class="bi bi-instagram ms-2"></i>
+                        <i class="bi bi-twitter ms-2"></i>
+                        <i class="bi bi-pinterest ms-2"></i>
+                        <i class="bi bi-youtube ms-2"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

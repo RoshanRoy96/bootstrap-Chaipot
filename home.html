@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chai Pot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar-brand {
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .nav-link:hover {
+            color: black;
+            font-weight: bolder;
+        }
+
+        .salutation {
+            background-color: aliceblue;
+        }
+
+        .div-1 {
+            background-image: url(/Images/The-Chai-Pot/Tea\ and\ biscuits.jpg);
+            height: 400px;
+            opacity: 0.9;
+        }
+
+        .div-2 {
+            background-image: url(/Images/The-Chai-Pot/black-tea\ new.jpg);
+            height: 400px;
+            opacity: 0.9;
+        }
+
+        .div-3 {
+            background-image: url(/Images/The-Chai-Pot/masala-chai-1.jpg);
+            height: 400px;
+            opacity: 0.9;
+        }
+
+        .div-4 {
+            background-image: url(/Images/The-Chai-Pot/franchise-1.jpg);
+            height: 400px;
+            opacity: 0.9;
+        }
+
+        .text-1 {
+            color: black !important;
+        }
+
+        .text-2 {
+            color: black !important;
+        }
+
+        .text-3 {
+            color: black !important;
+        }
+
+        .text-4 {
+            color: black !important;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: rgba(68, 68, 68, 0.397) !important;
+        }
+
+        .single-item .slick-dots li button:before {
+            font-size: 16px;
+            color: lightslategray;
+            opacity: 1;
+        }
+
+        .single-item .slick-dots li.slick-active button:before {
+            color: black;
+            opacity: 1;
+        }
+        
+        .bi-facebook:hover,
+        .bi-instagram:hover,
+        .bi-twitter:hover,
+        .bi-pinterest:hover,
+        .bi-whatsapp:hover,
+        .bi-youtube:hover{
+             font-size: 27px !important;
+             cursor: pointer;
+        }
+        .footer{
+            background-color: darkslategray;
+        }
+
+        @media screen and (max-width: 576px) {
+            .offer span {
+                width: 100%;
+                margin-top: 15px;
+            }
+
+            .offer {
+                padding-bottom: 50px;
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            .offer span {
+                width: 100%;
+                margin-top: 15px;
+            }
+
+            .offer {
+                padding-bottom: 50px;
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+
+            .div-1,
+            .div-2,
+            .div-3,
+            .div-4 {
+                width: 100%;
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <!--Navbar-->
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-3" href="#">The Chai Pot</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-4">
+                        <a class="nav-link" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="shop.html">SHOP</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">FRANCHISE</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-4">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#mySearch"><i class="bi bi-search"></i></a>
+                    </li>
+                    <hr>
+                    <li class="nav-item me-5">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal"><i class="bi bi-bag"></i></a>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+            <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">ITEMS IN YOUR CART</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body text-center">
+          <h4 class="mt-5">Your cart is currently empty</h4><br><br>
+          <a href="shop.html" class="btn btn-dark">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Search-->
+  <div class="modal" id="mySearch">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body input-group">
+                <input type="text" class="form-control" id="inputSearch" placeholder="What are you looking for?">
+                <span class="input-group-text"><i class="bi bi-search"></i></span>
+                <button type="button" class="btn-close mt-2 ms-3" data-bs-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid bg-dark text-white offer">
+        <h3 class="p-4">A world of rewards awaits you! Sign up now.<span class="float-end"><a href="rewards.html"
+                    class="btn btn-outline-light">Know More</a></span></h3>
+    </div>
+
+    <div class="container-fluid px-5 py-5 salutation">
+        <h4>Namaste / नमस्ते</h4>
+        <p class="fs-5 lead">THE CHAI POT is a Pop-Up Chai Cart dotted around the streets of India to serve hygenic cups
+            of freshly brewed artisan chai on the go, Intended to serve One Cup at a time!</p>
+        <button type="button" class="btn btn-dark">SHOP NOW</button>
+    </div><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 div-1 pt-3 px-4">
+                <div class="text-1">
+                    <h2>Enjoy a Hot Cup Of Tea And Snack</h2>
+                    <p class="fw-bold fs-5">Order tea and snacks from chai pots.</p>
+                    <button type="button" class="btn btn-dark">ORDER NOW</button>
+                </div>
+            </div>
+            <div class="col-md-6 div-2 pt-3 px-4">
+                <div class="text-2">
+                    <h2>New Collection of Artisanal Teas</h2>
+                    <p class="fw-bold fs-5">Try out our best collection of blended teas</p>
+                    <button type="button" class="btn btn-dark">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 div-3 pt-3 px-4">
+                <div class="text-3">
+                    <h2>A Combination Of Finest Crafted Teaware</h2>
+                    <p class="fw-bold fs-5">Get the finest teaware.</p>
+                    <button type="button" class="btn btn-dark">SHOP NOW</button>
+                </div>
+            </div>
+            <div class="col-md-6 div-4 pt-4 px-4">
+                <div class="text-4">
+                    <h2>FRANCHISES AVAILABLE</h2>
+                    <p class="fw-bold fs-5">POP-UP .KIOSK .MOBILE .INLINE</p>
+                    <button type="button" class="btn btn-dark">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/Images/The-Chai-Pot/agriculture_275x.avif" height="100px"><br><br>
+                        <h4 class="card-title">Farmer Friendly</h4>
+                        <p class="card-text text-wrap">With our focus on sustainable development, we advocate fair trade
+                            policies whereby we strive to empower small farmers by providing them with opportunity,
+                            equality, and security.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/Images/The-Chai-Pot/new-tea-blends.avif" height="100px"><br><br>
+                        <h4 class="card-title">New Tea Blends</h4>
+                        <p class="card-text text-wrap">With our repertoire of over 200+ blends, our forte lies in
+                            reinventing them every month to ensure quality, and uniqueness. Expect to be spoilt for
+                            choice! We care our user's health and sustainability of nature.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/Images/The-Chai-Pot/tested-approved.avif" height="100px"><br><br>
+                        <h4 class="card-title">Tested And Approved</h4>
+                        <p class="card-text text-wrap">All the stores of chai pot have fssai certification. It has been
+                            registered in msme, startup india and has udyog certification. We procure fresh, non-toxic
+                            and high quality teas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+
+
+
+    <!--Customer Reviews-->
+
+    <div class="container reviews">
+        <h1 class="text-center">WE VALUE OUR CUSTOMERS</h1><br>
+        <div class="row single-item">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text p-3 text-center">Never knew so many varieties of tea exists before I visited
+                            this
+                            small tea stall. I tried most of the tea available here.The price is also reasonable. I was
+                            never a chai lover, after having a chai over here I'm becoming one (a chai lover).</p>
+                        <div class="ps-3 text-center">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h6 class="ps-3 text-center">Divya Shree <span>/ JP Nagar, Bengaluru</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text p-3 text-center">Went here for the first time, Was suggested Paan Chai, the
+                            taste and the smell was very good. The biscuit they had was very fresh and tasty Also got a
+                            card from them which he siad that for every 9 drink i purchase there the 10th drink is o
+                            them.</p>
+                        <div class="ps-3 text-center">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h6 class="ps-3 text-center">Jaison S <span>/ JP Nagar, Bengaluru</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text p-3 text-center">A shop which serves numerous of varieties of tea. The
+                            entire vibe hits different, the locality, Chai and everything. The cart is well placed. very
+                            cute beautiful ❤️ 🤩 Heaven for Tea Lover's ☕. Must visit with your friends specially on
+                            rainy days.</p>
+                        <div class="ps-3 text-center">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h6 class="ps-3 text-center">Bhumi D.Joshi <span>/ JP Nagar, Bengaluru</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br>
+
+    <!--Footer Section-->
+    <footer class="footer py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h5>ADDRESS</h5><br>
+                    <p>NOMADIC TASTEBUDS PVT LTD</p>
+                    <p>#7, Konanakunte Road, Bengaluru-560062</p>
+                    <p>Email: hello@thechaipot.com</p>
+                    <p>Phone: 1800-859-2533</p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2">
+                    <h5>QUICK LINKS</h5><br>
+                    <p><a href="#" class="text-white text-decoration-none">Franchise</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">About Us</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Contact</a> </p>
+                    <p><a href="#" class="text-white text-decoration-none">Blogs</a></p>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <h5>THE COMPANY</h5><br>
+                    <p><a href="#" class="text-white text-decoration-none">Terms and Conditions</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+                    <p><a href="#" class="text-white text-decoration-none">Shipping and Returns</a></p>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-3">
+                    <h5 class="">Follow Us</h5><br>
+                    <div class="social-media fs-4">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-whatsapp ms-2"></i>
+                        <i class="bi bi-instagram ms-2"></i>
+                        <i class="bi bi-twitter ms-2"></i>
+                        <i class="bi bi-pinterest ms-2"></i>
+                        <i class="bi bi-youtube ms-2"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.single-item').slick({ dots: true });
+
+    </script>
+</body>
+
+</html>
